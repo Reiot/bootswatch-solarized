@@ -26,6 +26,18 @@
 @rebase2:             @base02;  // unused
 @rebase3:             @base03;  // unused
 
+
+// dark mode
+/*
+@rebase03:            @base03; // background
+@rebase02:            @base02; // background highlight
+@rebase01:            @base01; // comment
+@rebase00:            @base00; // unused
+@rebase0 :            @base0;  // text color
+@rebase1:             @base1;  // emphasized text
+@rebase2:             @base2;  // unused
+@rebase3:             @base3;  // unused
+*/
 // Grays
 // -------------------------
 @black:                 @rebase3;
@@ -92,19 +104,19 @@
 @btnBorder:                         @rebase01;
 
 @btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 15%);
+@btnPrimaryBackgroundHighlight:     lighten(@btnPrimaryBackground, 10%);
 
-@btnInfoBackground:                 #5bc0de;
-@btnInfoBackgroundHighlight:        @blue;
+@btnInfoBackground:                 @blue;
+@btnInfoBackgroundHighlight:        lighten(@btnInfoBackground, 10%);
 
-@btnSuccessBackground:              #62c462;
-@btnSuccessBackgroundHighlight:     @green;
+@btnSuccessBackground:              @green;
+@btnSuccessBackgroundHighlight:     lighten(@btnSuccessBackground, 10%);
 
-@btnWarningBackground:              lighten(@orange, 15%);
-@btnWarningBackgroundHighlight:     @orange;
+@btnWarningBackground:              @orange;
+@btnWarningBackgroundHighlight:     lighten(@btnWarningBackground, 10%);
 
-@btnDangerBackground:               #ee5f5b;
-@btnDangerBackgroundHighlight:      @red;
+@btnDangerBackground:               @red;
+@btnDangerBackgroundHighlight:      lighten(@btnDangerBackground, 10%);
 
 @btnInverseBackground:              @rebase1;
 @btnInverseBackgroundHighlight:     @rebase2;
